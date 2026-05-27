@@ -13,7 +13,7 @@ class Pet {
         Duration timeSinceLastMeal = Duration.between(lastFedTime, currentTime);
         long hoursPassed = timeSinceLastMeal.toHours();
         if (hoursPassed >= 8) {
-            System.out.println(name + " happily eats the meal! 🍖");
+            System.out.println(name + " happily eats the meal!");
             this.lastFedTime = currentTime; 
         } else {
             long hoursToWait = 8 - hoursPassed;
